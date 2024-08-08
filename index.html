@@ -78,6 +78,21 @@
             //         .catch(error => console.error('Error:', error));
             // });
 
+            // Fetch all image URLs initially
+        fetch('https://laxitafashion.pythonanywhere.com/all_images')
+            .then(response => response.json())
+            .then(imageUrls => {
+                imagesContainer.innerHTML = ''; // Clear current images
+                imageUrls.forEach(url => {
+                    const imgDiv = document.createElement('div');
+                    imgDiv.className = 'item';
+                    imgDiv.innerHTML = `<img src="${url}">`;
+                    imagesContainer.appendChild(imgDiv);
+                    addHoverIconToImage(imgDiv, url); // Add hover icon to image
+                });
+            })
+            .catch(error => console.error('Error:', error));
+
             // serch using enter and icon
             function serchImage() {
                 const searchTerm = searchInput.value;
