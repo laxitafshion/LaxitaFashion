@@ -81,7 +81,6 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: #383631;
 }
 
 .item {
@@ -113,7 +112,7 @@ body {
         font-size: 10vw;
     }
     .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
     
     #searchtext{
@@ -129,29 +128,6 @@ body {
         
     }
 }
-
-/* @media (max-width: 768px) {
-
-    .logo h1{
-        font-size: 10vw;
-    }
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    #searchtext{
-        height: 8vw;
-        font-size: 3vw;
-        font-weight: 600;
-    }
-    
-    .image_search i{
-        font-size: 4vw;
-        top: 25%;
-        right: 5%;
-        
-    }
-} */
 
 @media (max-width: 992px) {
 
