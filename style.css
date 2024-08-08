@@ -80,7 +80,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: #383631;
+    /* background-color: #383631; */
 }
 
 .item {
