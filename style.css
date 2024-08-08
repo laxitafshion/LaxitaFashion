@@ -80,6 +80,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
+    background-color: #383631;
 }
 
 .item {
@@ -112,6 +113,7 @@ body {
     }
     .container {
         grid-template-columns: 1fr !important;
+        grid-auto-rows: 550px;
     }
     
     #searchtext{
@@ -135,6 +137,7 @@ body {
     }
     .container {
         grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 500px;
     }
     
     #searchtext{
