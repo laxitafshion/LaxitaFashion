@@ -21,7 +21,6 @@ body {
     height: 10vh;
     width: 100%;
     padding: 1vw 0vw;
-    /* background-color: #111; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +105,7 @@ body {
     display: flex;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
 
     .logo h1{
         font-size: 10vw;
