@@ -17,6 +17,55 @@ body {
     color: #383631;
 }
 
+#login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+#login h2{
+    font-size: 5vw;
+    font-family: main;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#username,
+#password{
+    width: 25vw;
+    padding: 0.5vw 1vw;
+    background-color: #c0c0bf;
+    border: none;
+    color: #383631;
+    border-radius: 50px;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+#loginBtn{
+    padding: 1vw 2vw;
+    /* width: 10vw; */
+    margin-top: 1.4vw;
+    border: none;
+    background-color:#383631 ;
+    color: #c0c0bf;
+    border-radius: 50px;
+    font-size: 1vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
 .logo {
     height: 10vh;
     width: 100%;
