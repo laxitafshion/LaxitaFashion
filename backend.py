@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 def search_images(search_term):
-    with open('/home/laxitafashion/LAXITA/data.json', 'r') as file:
+    with open('/Users/kenilavaiya/Desktop/LAxita design/LaxitaFashion/data.json', 'r') as file:
         file_names = json.load(file)
         image_paths = ['DATA/' + name for name in file_names if search_term.lower() in name.lower()]
         return image_paths
